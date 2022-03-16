@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>page3</title>
 </head>
 <body>
@@ -21,5 +22,46 @@
          </ul>
         </nav>
      </header> 
+         <!-- Contact -->
+    <div id="contact">
+        <div class=" column  ">
+          <h3>Address</h3>
+        <div class= "address"> <p><i class="fa fa-envelope-o fa-lg" style="margin: 10px"></i> Dental-Clinic.com</p>
+          <p><i class="fa fa-phone fa-lg " style="margin: 10px"></i> +905448881122 , +905368884411</p>
+          <p><i class="fa fa-map-marker fa-lg" style="margin: 10px"></i> Bldg. 15, St. street, Turkey, Istanbul</p>
+        </div> 
+        </div>
+        <div class=" column ">
+          <h3>Contact us</h3>
+          <form action="/action_page.php" target="_blank" method="post">
+            <input  class="input" type="text" placeholder="Name" required name="Name">
+            <input  class="input" type="email" placeholder="Email" required name="email">
+            <input  class="input" type="tel" placeholder="Phone" required name="Phone">
+            <textarea name="message" rows="10" cols="30">Write your message here..</textarea>
+            <fieldset>
+            <p>Choose your age group:</p>
+            <input type="radio" id="kids" name="age" value="kids 40 tl"  onclick="myFunction()" > between 1 and 17 years<br>
+            <input type="radio" id="adult" name="age" value="adult 60 tl"  onclick="myFunction()" > between 18 and 59 years<br>
+            <input type="radio" id="old" name="age" value="old 50 tl"  onclick="myFunction()" >Older than 60 years<br>
+            <input type="text" id="price" size="30">
+            </fieldset>
+            <button class="btn" type="submit"><i class="fa fa-paper-plane "></i> submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+function myFunction() {
+  var age = document.forms[0];
+  var txt = "";
+  var i;
+  for (i = 0; i < age.length; i++) {
+    if (age[i].checked) {
+      txt = txt + age[i].value + " ";
+    }
+  }
+  document.getElementById("price").value = "youre price is: " + txt;
+}
+    </script>
 </body>
 </html>
