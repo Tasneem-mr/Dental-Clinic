@@ -50,7 +50,7 @@
 		#contact {
 			margin-left: 15%;
 			margin-right:  15%;
-			margin-top: 10%;
+			margin-top: 10px;
 			display: flex;
 			justify-content: space-around;
 		  }
@@ -62,6 +62,7 @@
 		  .column {
 			text-align: center;
 			margin: 20px;
+			margin-top: 5px;
 			padding: 20px;
 		  }
 		  form {
@@ -101,11 +102,14 @@
 		  }
 		  fieldset {
 			width: 276px;
-            margin: auto;
-			padding-bottom: 20px;
+            margin: 10px auto;
+			padding-bottom: 10px;
 			text-align: justify;
 			border: 1px solid #0a5a529f;
 			border-radius: 4px;
+		  }
+		  #price {
+			  margin-top: 5px;
 		  }
 		  .btn{  background-color: #23ac8e; 
 			  border: none;
